@@ -1,0 +1,31 @@
+.latest{
+    color:white;
+    background-color:blue;
+    height:20px;
+    width:45px;
+}
+
+.scrolling-container {
+    border: 3px solid black;
+    border-radius:5px;
+    height:20px;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    text-align: center;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
